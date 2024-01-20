@@ -5,42 +5,105 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       appBar: AppBar(
         title: const Text("Portfolio App"),
+        centerTitle: true,
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-          const SizedBox(height: 10,),
+        children: [
+          const SizedBox(
+            height: 30,
+          ),
           Center(
             child: Container(
               width: 150,
-              height: 100,
+              height: 150,
               child: const CircleAvatar(
-                backgroundImage: NetworkImage("https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/177731712/original/2eecf438f9e707809c4d47d0227dd2534c1b5521/mascot-logo-face-avatar-cartoon-face-from-photo.png"),
+                backgroundImage: NetworkImage(
+                    "https://avatars.githubusercontent.com/u/124512968?s=400&u=16c1d0dc4b79f5f6c5ab693d5d7cd58e3c8400cc&v=4"),
               ),
             ),
           ),
-          const SizedBox(height: 30,),
-          Padding(
-            padding: const EdgeInsets.only(left: 5.0),
-            child: Container(
-              alignment: Alignment.center,
-              width: 120,
-              height: 50,
-              decoration: const BoxDecoration(
-                color: Colors.deepOrangeAccent,
-                borderRadius: BorderRadius.vertical(bottom: Radius.circular(10),top:Radius.circular(10) ),
-              ),
-              child: const Text("Education",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
-            ),
+          const SizedBox(
+            height: 10,
           ),
-          const SizedBox(height: 30,),
-          Container(
-            width: double.infinity,
-            height: 150,
-            color: Colors.pink,
+          const Center(child: Text("Flutter Developer",style: TextStyle(fontWeight: FontWeight.bold))),
+          const SizedBox(
+            height: 20,
+          ),
+          const Padding(
+            padding: const EdgeInsets.only(left: 12.0),
+            child: Text("I'm a Flutter developer with a passion for creating beautiful and powerful mobile apps. "),
+          ),
+          const SizedBox(
+            height: 60,
+          ),
+          Column(
+            children: [
+              Row(
+                children: const [
+                  Icon(Icons.person),
+                  Text("Munazir Rehman"),
+                ],
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              Row(
+                children: [
+                  Icon(Icons.phone),
+                  Text("03350557846"),
+                ],
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              Row(
+                children: const [
+                  Icon(Icons.location_city_rounded),
+                  Text("Peshawar"),
+                ],
+              ),
+            ],
+          ),
+          const SizedBox(height: 10,),
+          Column(
+            children: [
+              const Center(child: Text("Skills",style: TextStyle(fontWeight: FontWeight.bold),)),
+              const SizedBox(height: 10,),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: const [
+                  Text("Dart"),
+                  Text("Flutter"),
+                  Text("Firebased"),
+                  Text("REST APIs"),
+                  Text("Java"),
+
+                ],
+              )
+            ],
+          ),
+          const SizedBox(height: 10,),
+          Column(
+            children: [
+              const Center(child: Text("Experience",style: TextStyle(fontWeight: FontWeight.bold),)),
+              const SizedBox(height: 10,),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children:  const [
+                 Text("AC IT Tech Inc"),
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: const [
+                  Text("From 2020 t0 2023"),
+                ],
+              )
+            ],
           )
         ],
       ),
