@@ -68,7 +68,7 @@ class HomeScreen extends StatelessWidget {
               ),
             ],
           ),
-          const SizedBox(height: 10,),
+          const SizedBox(height: 30,),
           Column(
             children: [
               const Center(child: Text("Skills",style: TextStyle(fontWeight: FontWeight.bold),)),
@@ -86,7 +86,7 @@ class HomeScreen extends StatelessWidget {
               )
             ],
           ),
-          const SizedBox(height: 10,),
+          const SizedBox(height: 30,),
           Column(
             children: [
               const Center(child: Text("Experience",style: TextStyle(fontWeight: FontWeight.bold),)),
@@ -105,9 +105,9 @@ class HomeScreen extends StatelessWidget {
                 ],
               )
             ],
-          )
-        ],
-      ),
+          ),
+                ],
+              )
     );
   }
 }
