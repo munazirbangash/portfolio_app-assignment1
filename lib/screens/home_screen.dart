@@ -78,7 +78,7 @@ class HomeScreen extends StatelessWidget {
                 children: const [
                   Text("Dart"),
                   Text("Flutter"),
-                  Text("Firebased"),
+                  Text("Firebase"),
                   Text("REST APIs"),
                   Text("Java"),
 
@@ -97,6 +97,7 @@ class HomeScreen extends StatelessWidget {
                  Text("AC IT Tech Inc"),
                 ],
               ),
+              const SizedBox(height: 10,),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: const [
